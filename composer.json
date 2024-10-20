@@ -1,0 +1,36 @@
+{
+    "name": "therealjanjanssens/laravel-google-shopping-feed",
+    "description": "Laravel Google Shopping Feed",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "TheRealJanJanssens\\GoogleShoppingFeed\\": "src"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0",
+        "spatie/array-to-xml": "2.8.*|3.*.*"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheRealJanJanssens\\GoogleShoppingFeed\\GoogleShoppingFeedServiceProvider"
+            ],
+            "aliases": {
+                "GoogleShoppingFeed": "TheRealJanJanssens\\GoogleShoppingFeed\\GoogleShoppingFeedFacade"
+            }
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0",
+        "pestphp/pest": "^2.28"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
